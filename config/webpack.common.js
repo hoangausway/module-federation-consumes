@@ -61,12 +61,15 @@ const htmlWebpackPlugin = new HtmlWebpackPlugin({
   filename: 'index.html' // output file
 })
 
-console.log('process.env.PUBLIC_PATH', process.env.PUBLIC_PATH)
+// const remotePath = 'http://localhost:8080/'
+// const remotePath = 'https://module-federation-exposes.netlify.app/'
+const remotePath = process.env.REMOTE_PATH
+
 const moduleFederationPlugin = new ModuleFederationPlugin({
   name: 'consumes',
   filename: 'remoteEntry.js',
   remotes: {
-    somemodulename: `somemodulename@https://${process.env.PUBLIC_PATH}remoteEntry.js`
+    somemodulename: `somemodulename@${remotePath}remoteEntry.js`
   },
   shared: {
     ...deps,
