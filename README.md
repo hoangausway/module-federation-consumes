@@ -1,4 +1,4 @@
-# Webpack 5 with Module Federation - exposes
+# Webpack 5 with Module Federation - consumes
 modified from git@github.com:taniarascia/webpack-boilerplate
 
 Minimal Webpack 5 boilerplate with a hot dev server, Module Federation and react, styled-components.
