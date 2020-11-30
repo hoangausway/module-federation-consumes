@@ -1,3 +1,3 @@
 export const example = () => {
-  return 'Module Federation: this project exposes a React component named SomeComponent'
+  return 'Module Federation: this project uses a remoted React component named SomeComponent'
 }
