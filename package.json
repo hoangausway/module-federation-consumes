@@ -35,7 +35,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:hoang.ausway/modulefed"
+    "url": "git@github.com:hoang.ausway/module-federation-consumes"
   },
   "dependencies": {
     "react": "^17.0.1",
